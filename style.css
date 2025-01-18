@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Della+Respira&family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  padding: 28px 40px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #00000033;
+}
+
+.navbar h1 {
+  font-size: 24px;
+  font-family: "Della Respira";
+  color: #111;
+  overflow: hidden;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar .links a {
+  color: #000;
+  text-decoration: none;
+  color: #111;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+  padding-bottom: 18px;
+}
+
+.container .left {
+  width: 33.3%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 24px;
+}
+
+.container .left p {
+  color: #00000080;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.container .left button {
+  padding: 16px 32px;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 200px;
+}
+
+.container .right {
+  width: 33.3%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.container .right h1 {
+  font-size: 120px;
+  line-height: 120px;
+  color: #111;
+  overflow: hidden;
+}
+
+.container .right p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #00000080;
+  overflow: hidden;
+}
+
+.container .center {
+  width: 33.4%;
+  height: 36.846vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: -1;
+}
+
+.container .center img {
+  height: 100%;
+}
+
+.marquee {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: hidden;
+  margin-top: 40px;
+}
+
+.marquee .marquee-outer {
+  display: flex;
+  width: fit-content;
+  width: 100%;
+  flex: auto;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.marquee .marquee-inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 100%;
+  position: relative;
+  gap: 60px;
+  transform: translateX(0%);
+}
+
+.marquee .marquee-inner svg path {
+  letter-spacing: 8px;
+  font-family: "Della Respira";
+  fill: transparent;
+  stroke: #000;
+  stroke-width: 1px;
+  stroke-dasharray: 999;
+  stroke-dashoffset: 999;
+  animation: 2s text ease-in forwards 1.2s;
+}
+
+@keyframes text {
+  0% {
+    stroke-dashoffset: 999;
+  }
+
+  80% {
+    fill: transparent;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    fill: #111;
+  }
+}
+
+.marquee .marquee-inner .circle {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.animated-text {
+  overflow: hidden;
+}
+
+.animated-text span {
+  display: inline-block;
+  position: relative;
+}
